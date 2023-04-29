@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="x-icon" href="./assets/asp.png">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"> </script>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="./about/about.html"><img src="./assets/asp.png" alt="asp"></a>
+        <ul id="sidemenu">
+            <li><a href="">Home</a></li>
+            <li><a href="./about/about.html">About</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="./faq/index.html">FAQ</a></li>
+             <i class="fas fa-times"  onclick="closemenu()"></i>
+        </ul>
+
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+    <div class="container">
+    
+           
+    <div class="landing" >
+        <div class="col1">
+            <div class="row1" id="canvas_container">
+            
+                 <img src="./assets/Picsart_23-02-26_16-16-35-496.png" alt="J A R V I S" data-aos="flip-up" data-aos-duration="2000">
+                
+           
+        
+        </div>
+           
+
+            <div class="row2">
+            <a href="#guide"><button class="btn learn">Learn More</button></a>
+            <a href="./first.html"><button class="btn start" id="start">Get Started -></button></a>
+             </div>
+            
+        </div>
+    </div>
+        
+        
+
+
+        
+
+        <hr>
+
+        <div class="row3" id="guide">
+            <video autoplay loop muted plays-inline src="./assets/demo_video.mp4"></video>
+            <p>
+            This voice assistant project aims to develop an intelligent virtual assistant that can be activated through voice commands and perform various tasks for the user. 
+            The voice assistant will be built using natural language processing techniques and will use machine learning algorithms to improve its accuracy and efficiency.
+            The project will involve the use of various tools and technologies such as HTML and CSS, Javascript, Three JS, 
+            Natural language processing libraries, and speech recognition software. 
+            This is a fully functional Voice assistant capable of assisting users with various tasks and providing a seamless user experience
+
+            </p> 
+        </div>
+     <div class="cursor"></div>
+      <div class="cursor2"></div>
+    </div>
+
+    <footer>
+        <h1>J<i class="fab fa-app-store"> </i>RVIS </h1>
+        <p> ASPA </p>    
+       
+    </footer>
+    <script>
+     var sidemenu =document.getElementById("sidemenu");
+
+     function openmenu(){
+        sidemenu.style.right ="0";
+     }
+      function closemenu(){
+        sidemenu.style.right ="-200px";
+     }
+</script>    
+<script>
+   var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+
+</script>
+
+    <script src='https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'>
+</script><script  src="./nova.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
